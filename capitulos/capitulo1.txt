@@ -1,0 +1,2 @@
+Git es un sistema de control de versiones ideado por Linus Torvalds.
+Añadir los cambios a la zona de intercambio temporal.

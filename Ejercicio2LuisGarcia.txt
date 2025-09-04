@@ -1,0 +1,89 @@
+1. git init
+
+2.GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ejercicio2LuisGarcia.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+a) se creo el fichero indice.txt
+
+b) GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ejercicio2LuisGarcia.txt
+        indice.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c) GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git add indice.txt
+
+d) GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   indice.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ejercicio2LuisGarcia.txt
+
+3. GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git commit -am "Añadido indice del libro"
+[master (root-commit) dfb305d] Añadido indice del libro
+ 1 file changed, 3 insertions(+)
+ create mode 100644 indice.txt
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Ejercicio2LuisGarcia.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+4. Se cambio el contenido del indice.txt
+
+a) GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git diff
+diff --git a/indice.txt b/indice.txt
+index ece388e..7a2e65d 100644
+--- a/indice.txt
++++ b/indice.txt
+@@ -1,3 +1,4 @@
+ i. Capítulo 1: Introducción a Git
+ ii. Capítulo 2: Flujo de trabajo básico
+ iii. Capítulo 3: Gestión de ramas
++iv. Capitulo 4: Repositorios remotos
+
+b) GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git add .
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git commit -am "Añadido capitulo 3 sobre gestion de ramas"
+[master 2c14d66] Añadido capitulo 3 sobre gestion de ramas
+ 2 files changed, 1 insertion(+)
+ create mode 100644 Ejercicio2LuisGarcia.txt
+
+5. GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git log --oneline
+2c14d66 (HEAD -> master) Añadido capitulo 3 sobre gestion de ramas
+dfb305d Añadido indice del libro
+
