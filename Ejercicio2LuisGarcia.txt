@@ -87,3 +87,27 @@ $ git log --oneline
 2c14d66 (HEAD -> master) Añadido capitulo 3 sobre gestion de ramas
 dfb305d Añadido indice del libro
 
+Se creo la carpeta y el documento de texto
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro/capitulos (master)
+$ git add .
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro/capitulos (master)
+$ git commit -am "Añadido capitulo 1"
+[master f506c38] Añadido capitulo 1
+ 2 files changed, 91 insertions(+)
+ create mode 100644 capitulos/capitulo1.txt
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro/capitulos (master)
+$ git log --oneline
+f506c38 (HEAD -> master) Añadido capitulo 1
+2c14d66 Añadido capitulo 3 sobre gestion de ramas
+dfb305d Añadido indice del libro
+
+6. Se creo el archivo .txt
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro/capitulos (master)
+$ git add .
+
+
+
