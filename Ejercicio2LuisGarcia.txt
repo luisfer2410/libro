@@ -337,7 +337,41 @@ index ece388e..691a641 100644
 +iv. Capitulo 4: Repositorios remotos
 
 
+8. Se modifico el archivo .txt
 
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git add .
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git commit -am "Añadido capitulo 5 al indice"
+[master b2143a4] Añadido capitulo 5 al indice
+ 2 files changed, 232 insertions(+)
+
+9. Se elimino la ultima linea del archivo .txt
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Ejercicio2LuisGarcia.txt
+        modified:   indice.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git restore indice.txt
+
+GracoSoft@DESKTOP-QRGRU1I MINGW64 ~/Desktop/libro (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Ejercicio2LuisGarcia.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
 
 
 
